@@ -1,4 +1,4 @@
-﻿using Tyuiu.KopylskikhVM.Sprint2.Task0.V8.Lib;
+﻿using Tyuiu.KopylskikhVM.Sprint2.Task2.V13.Lib;
 
 internal class Program
 {
@@ -10,36 +10,32 @@ internal class Program
 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* Спринт #2                                                               *");
-        Console.WriteLine("* Тема: Операции сравнения                                                *");
-        Console.WriteLine("* Задание #0                                                              *");
-        Console.WriteLine("* Вариант #8                                                              *");
+        Console.WriteLine("* Тема: Оператор if – полная и короткая форма записи                      *");
+        Console.WriteLine("* Задание #2                                                              *");
+        Console.WriteLine("* Вариант #13                                                             *");
         Console.WriteLine("* Выполнила: Копыльских Виктория Максимовна | НТм-24-1                    *");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* УСЛОВИЕ:                                                                *");
-        Console.WriteLine("* Написать программу из операций сравнений                                *");
-        Console.WriteLine("* (==, !=, <, >, <=, >=, последовательность операций не должна нарушаться)*");
-        Console.WriteLine("* Результат: (True, False, True, False, True, False)                      *");
+        Console.WriteLine("* Написать программу, которая запрашивает целые значения X и Y            *");
+        Console.WriteLine("* и определяет, находится ли точка в заштрихованной области.              *");
         Console.WriteLine("*                                                                         *");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
 
-        int x = 185;
-        int y = 251;
+        int x, y;
 
-        Console.WriteLine("x = " + x);
-        Console.WriteLine("y = " + y);
+        Console.WriteLine("Введите значение X:");
+        x = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Введите значение Y:");
+        y = Convert.ToInt32(Console.ReadLine());
 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
 
-        bool[] res = ds.GetCompareOperations(x, y);
-
-        for (int i = 0; i < 6; i++)
-        {
-            Console.WriteLine(res[i]);
-        }
+        Console.WriteLine(ds.CheckDotInShadedArea(x, y));
 
         Console.ReadLine();
     }

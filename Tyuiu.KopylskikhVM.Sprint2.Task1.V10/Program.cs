@@ -10,7 +10,7 @@ internal class Program
 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* Спринт #2                                                               *");
-        Console.WriteLine("* Тема: Операции сравнения и логические операции                          *");
+        Console.WriteLine("* Тема: Логические операции                                               *");
         Console.WriteLine("* Задание #1                                                              *");
         Console.WriteLine("* Вариант #10                                                             *");
         Console.WriteLine("* Выполнила: Копыльских Виктория Максимовна | НТм-24-1                    *");
